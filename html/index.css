@@ -1,0 +1,130 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #ddd;
+    overflow-x: hidden;
+}
+#header{
+    position:sticky;
+    top:0;
+    background-color: #fff;
+    display: flex;
+    padding:0% 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#search{
+    padding:5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin:0%;
+}
+#search-button{
+    padding: 10px;
+    font-size: 18px;
+    background-color: yellowgreen;
+    color:white;
+    cursor: pointer;
+    border:none;
+}
+#help-button{
+    background-color: black;
+    border: 0.5px solid black;
+    cursor: pointer;
+    font-size:15px;
+    margin-right: 20px;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+}
+
+
+#app-zone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:2% 5%;
+}
+
+#app-card{
+    background-color: white;
+    display: inline-block;
+    margin:0.5%;
+}
+#app-stats{
+    text-align: center;
+    font-size: 13px;
+    color:gray;
+    padding:5px 0px;
+}
+#app-card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px gray;
+}
+
+#footer{
+    background-color: white;
+    padding:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+    word-spacing: 5px;
+}
+
+#icons a{
+    font-size:40px;
+    margin:0px 15px;
+    color:black;
+}
+#icons a:hover{
+    color:yellowgreen;
+}
+
+#app-tile-name{
+    font-size: 14px;
+}
+
+@media screen and (max-width:600px) {
+    #search-box{
+        display: none;
+    }   
+    #web-logo{
+        width:100px;
+    }
+    #app-zone{
+        display: block;
+        text-align: center;
+    }
+    #app-card{
+        display: inline-block;
+        margin:5% 2%;
+    }
+    #app-tile-img{
+        width: 90%;
+        padding:10px;
+    }
+    #app-stats{
+        font-size: 100%;
+    }
+    #app-tile-name{
+        font-size: 120%;
+    }
+    body,html{
+        height:100%;
+    }
+    #footer{
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}

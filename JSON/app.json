@@ -1,0 +1,20 @@
+[
+    {
+        "app_name":"priorities",
+        "category":"Accessories",
+        "cost":"Free",
+        "IMG":"priorities-app.png",
+        "multiple":["1.jpeg","2.jpeg","3.jpeg","4.jpeg"],
+        "about":"Manage your work with the PRIORITIES app. Enter all your to-do, upcoming dates and deadlines in the app.<br/><br/> Check out the works that are all completed and delete the works that are not required anymore. <br/><br/> Maintain a proper task sheet and be a WINNER !",
+        "date":"06-12-2021","size":"53MB","version":"1.0.0","apk":"priorities.apk"
+    },
+    {
+        "app_name":"arithmetic",
+        "category":["Games","Education"],
+        "cost":"Free",
+        "IMG":"arithmetic-app.png",
+        "multiple":["5.jpeg","6.jpeg","7.jpeg","8.jpeg"],
+        "about":"Test your math skills, learn to do quick addition, subtraction and multiplication by earning reward cards.<br/><br/> Earn all the cards avail buying them with Arth Coins. Earn Arth coin by playing the game.<br/><br/> <b>Steps to follow for the game</b><br/>1. Play game of calculation and earn Arth Coin for correct answers<br/>2. Use those Arth Coins to buy cards (A-Z and 0-9) from the market place<br/>3. All your cards bought by, will be shown in your profile<br/>4. Make a strong profile. Share your result with us.",
+        "date":"16-12-2021","size":"46MB","version":"1.0.0","apk":"arithmetic.apk"
+    }
+]

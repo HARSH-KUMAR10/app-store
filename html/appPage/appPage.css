@@ -1,0 +1,231 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #ddd;
+    overflow-x: hidden;
+}
+#header{
+    position:sticky;
+    top:0;
+    background-color: #fff;
+    display: flex;
+    padding:0% 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#search{
+    padding:5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin:0%;
+}
+#search-button{
+    padding: 10px;
+    font-size: 18px;
+    background-color: yellowgreen;
+    color:white;
+    cursor: pointer;
+    border:none;
+}
+#help-button{
+    background-color: black;
+    border: 0.5px solid black;
+    cursor: pointer;
+    font-size:15px;
+    margin-right: 20px;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+}
+
+
+#app-zone{
+    margin:2% 10%;
+    padding:10px;
+    background-color: white;
+}
+
+#app-card{
+    background-color: white;
+    display: inline-block;
+    margin:0.5%;
+}
+#app-stats{
+    text-align: center;
+    font-size: 13px;
+    color:gray;
+    padding:5px 0px;
+}
+#app-card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px gray;
+}
+
+#footer{
+    background-color: white;
+    padding:2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: monospace;
+    letter-spacing: 0.7px;
+    word-spacing: 5px;
+}
+
+#icons a{
+    font-size:40px;
+    margin:0px 15px;
+    color:black;
+}
+#icons a:hover{
+    color:yellowgreen;
+}
+
+#app-initial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+}
+
+#app-initial-details{
+    margin:2% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#app-images{
+    margin:5% 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#app-title{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#app-desc{
+    margin:2% 20% 2% 0%;
+    color:gray;
+}
+
+#install-button{
+    border:2px solid yellowgreen;
+    background-color: yellowgreen;
+    color:white;
+    font-size: 18px;
+    font-weight: 900;
+    padding:5px;
+    margin:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#install-button:hover{
+    background-color: white;
+    color: yellowgreen;
+}
+
+#app-feature-head{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#features-section{
+    display: flex;flex-direction: row;justify-content: space-around;
+}
+
+#app-images-mobile{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    #search-box{
+        display: none;
+    }   
+    #web-logo{
+        width:100px;
+    }
+    #app-zone{
+        display: block;
+        text-align: center;
+    }
+    #app-card{
+        display: inline-block;
+        margin:5% 2%;
+    }
+    #app-tile-img{
+        width: 90%;
+        padding:10px;
+    }
+    #app-stats{
+        font-size: 100%;
+    }
+    #app-tile-name{
+        font-size: 120%;
+    }
+    body,html{
+        height:100%;
+    }
+    #footer{
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    #app-initial{
+        display: block;
+        padding:10px;
+    }
+    #app-initial-img{
+        width:90%;
+    }
+    #app-desc{
+        margin:auto;
+    }
+    #app-images{
+        display: none;
+    }
+    #features-section{
+        display: block;
+    }
+    #app-images-mobile{
+        display: block;
+    }
+    #next-button{
+        background-color: transparent;
+        border:0px solid black;
+        padding:0px 20px;
+        font-size: 30px;
+        font-weight:700;
+    }
+    #app-zone{
+        margin:6%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    
+    #app-images{
+        display: none;
+    }
+    #app-images-mobile{
+        display: block;
+    }
+    #next-button{
+        background-color: transparent;
+        border:0px solid black;
+        padding:0px 20px;
+        font-size: 30px;
+        font-weight:700;
+    }
+}
