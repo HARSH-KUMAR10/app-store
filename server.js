@@ -19,7 +19,6 @@ app.get('/app',(req,res)=>{
 })
 
 
-
 app.get('/getAllAppsList',(req,res)=>{
     var apps = fs.readFileSync('./JSON/app.json');
     apps = JSON.parse(apps);

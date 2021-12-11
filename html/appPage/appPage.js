@@ -3,14 +3,28 @@ var c = url.searchParams.get("app_name");
 var imgList = [];
 var currentPointer=0;
 
+async function installing(x,y){
+    var data=[{app_name:x}];
+    fetch("https://sheetdb.io/api/v1/7s53tmpbhvn6m", {
+    method: "POST",
+    body:JSON.stringify({
+        data
+    }),
+    headers: {
+        "Content-type": "application/json"
+    }
+}).then(response => response.json()).then(json => console.log(json));
+location.href="/"+y;
+}
+
 async function getAppData(){
     var html="";
     await fetch('/getApp?name='+c).then(res=>res.json()).then(data=>{
         html+='<div id="app-initial"><img id="app-initial-img" src="'+data.IMG+'" width="250px" alt="'+data.app_name+'"/>';
         html+='<section id="app-initial-details"><section><div id="app-title">'+data.app_name+'</div>';
         html+='<div>Type : '+data.category+'</div><div>Cost : '+data.cost+'</div></section><section>';
-        html+='<br/><br/><a id="install-button" href="/'+data.apk+'">install</a>';
-        html+='</section></section></div><hr/><section><div id="app-desc"><br/>'+data.about+'<br/><br/></div></section><hr/><section id="app-images-mobile"><section id="app-images-mobile-img">'
+        html+='<br/><br/><button id="install-button" onclick="installing(\''+data.app_name+'\',\''+data.apk+'\')">install</button>';
+        html+='</section></section></div><hr/><section><div id="app-desc"><br/>'+data.about+'<br/><br/></div></section><hr/><section id="app-images-mobile"><section id="app-images-mobile-img">';
         +'</section><button id="next-button" onclick="next(\'<\')">&lt;</button><button id="next-button" onclick="next(\'>\')">&gt;</button></section><section id="app-images">';
         for(i=0;i<data.multiple.length;i++){
             imgList[imgList.length]=data.multiple[i];
