@@ -234,5 +234,6 @@ body{
         padding:0px 20px;
         font-size: 30px;
         font-weight:700;
+        display: block;
     }
 }
