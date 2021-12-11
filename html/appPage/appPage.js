@@ -25,12 +25,16 @@ async function getAppData(){
         html+='<div>Type : '+data.category+'</div><div>Cost : '+data.cost+'</div></section><section>';
         html+='<br/><br/><button id="install-button" onclick="installing(\''+data.app_name+'\',\''+data.apk+'\')">install</button>';
         html+='</section></section></div><hr/><section><div id="app-desc"><br/>'+data.about+'<br/><br/></div></section><hr/><section id="app-images-mobile"><section id="app-images-mobile-img">';
-        +'</section><button id="next-button" onclick="next(\'<\')">&lt;</button><button id="next-button" onclick="next(\'>\')">&gt;</button></section><section id="app-images">';
         for(i=0;i<data.multiple.length;i++){
             imgList[imgList.length]=data.multiple[i];
-            html+='<img src="'+data.multiple[i]+'" width="250px" alt="App Image"/>';
+            html+='<img src="'+data.multiple[i]+'" width="250px" id="app_img_mobile" alt="App Image"/>';
         }
-        html+='</section><hr/><section style="padding:20px"><div id="app-feature-head">Features</div><section id="features-section" style=""><div><b>Upload Date :-</b>'
+        html+='</section><section id="app-images">';
+        for(i=0;i<data.multiple.length;i++){
+            imgList[imgList.length]=data.multiple[i];
+            html+='<img src="'+data.multiple[i]+'" width="250px" id="app_img_web" alt="App Image"/>';
+        }
+        html+='</section></section><button id="next-button" onclick="next(\'<\')">&lt;</button><button id="next-button" onclick="next(\'>\')">&gt;</button><hr/><section style="padding:20px"><div id="app-feature-head">Features</div><section id="features-section" style=""><div><b>Upload Date :-</b>'
         html+=data.date+'</div><div><b>Version :-</b> '+data.version+'</div><div><b>Size :-</b> '+data.size;
         html+='</div></section></section>';
     });
